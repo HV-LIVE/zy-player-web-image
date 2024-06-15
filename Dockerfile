@@ -18,5 +18,6 @@ ENV HV_HTTPS_CERT=
 ENV HV_HTTPS_CERT_KEY=
 
 EXPOSE 80
+VOLUME [ "/etc/launcher" ]
 
 ENTRYPOINT [ "/opt/launcher/launch.sh" ]
